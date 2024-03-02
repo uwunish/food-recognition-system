@@ -44,4 +44,16 @@ header {
 .main-body {
     height: 80vh;
     /* background-image: url(https://unsplash.com/photos/cooked-rice-with-vegetables-on-plate-5Q-7kgG7xbo); */
+    background-image: url("../public/images/food.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    display: block;
+}
+
+.calculate-btn {
+    display: inline-block;
 }

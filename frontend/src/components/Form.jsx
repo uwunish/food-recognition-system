@@ -56,7 +56,7 @@ function Form(props) {
     };
 
     return (
-        <div>
+        <div className="form">
             <form onSubmit={handleForm}>
                 <input
                     type="file"
@@ -66,8 +66,12 @@ function Form(props) {
                     onChange={handleFileChange}
                     style={{ display: "none" }}
                 />
-                <label for="selected-image">Select image</label>
-                <button type="submit">Calculate</button>
+                <label className="label" for="selected-image">
+                    Select image
+                </label>
+                <button className="calculate-btn" type="submit">
+                    Calculate
+                </button>
             </form>
 
             <img

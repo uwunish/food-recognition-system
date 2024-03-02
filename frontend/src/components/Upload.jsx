@@ -9,7 +9,7 @@ function Upload() {
 
     return (
         <div>
-            <h2>Upload the Food Image</h2>
+            {/* <h2>Upload the Food Image</h2> */}
             <Form />
         </div>
     );
