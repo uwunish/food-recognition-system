@@ -4,8 +4,44 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff7f1;
+    color: #35374b;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #ffe4c9;
+    color: #070f2b;
+}
+
+.header {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .preview-img {
     height: 200px;
     width: 200px;
     background-size: cover;
+}
+
+.main-body {
+    height: 80vh;
+    /* background-image: url(https://unsplash.com/photos/cooked-rice-with-vegetables-on-plate-5Q-7kgG7xbo); */
 }

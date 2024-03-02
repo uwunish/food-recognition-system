@@ -29,7 +29,7 @@ Initiate the app
 app.use(express.json());
 app.use(cors());
 
-const food = new Food();
+// const food = new Food();
 
 // Food.find({ name: "Bhaat" })
 //     .then(function (foods) {
@@ -50,13 +50,20 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
     console.log("'/' is called");
-    const body = req.body;
-    console.log(body);
-    res.send();
+    const file = req.body.file;
+    console.log(file);
+    const foodItem = "Bhaat";
+    // res.redirect("/calculate");
+    res.send({ data: file });
 
     // body.file = "hello";
     // res.json(body);
 });
+
+// app.post("./calculate", (req, res) => {
+//     console.log("/calculate is called in server side");
+//     res.sendFile(__dirname + "../frontend/src/components/App.jsx");
+// });
 
 // app.post("/calculate", (req, res) => {
 //     console.log("'/calculate' is called");

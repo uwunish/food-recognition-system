@@ -10,11 +10,13 @@ function App() {
         <Router>
             <div className="App">
                 <Header />
-                <Routes>
-                    <Route path="/" element={<Upload />} />
-                    <Route path="/calculate" element={<Calculate />} />
-                </Routes>
-                <Footer />
+                <div className="main-body">
+                    <Routes>
+                        <Route path="/" element={<Upload />} />
+                        <Route path="/calculate" element={<Calculate />} />
+                    </Routes>
+                </div>
+                <Footer className="footer" />
             </div>
         </Router>
     );

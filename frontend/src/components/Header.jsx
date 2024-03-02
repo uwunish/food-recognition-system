@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
     return (
-        <header>
+        <header className="header">
             <h1>Food Recognition System</h1>
         </header>
     );

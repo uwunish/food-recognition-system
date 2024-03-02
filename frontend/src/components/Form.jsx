@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 var imageURL;
 
 function Form(props) {
     const [file, setFile] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleFileChange = (event) => {
         console.log(event.target.files[0]);
@@ -23,18 +23,26 @@ function Form(props) {
         event.preventDefault();
 
         axios
-            .post("http://localhost:5000", file, {
-                headers: {
-                    "Content-Type": file.type,
-                },
-            })
+            .post(
+                "http://localhost:5000",
+                { file },
+                {
+                    headers: {
+                        "Content-Type": file.type,
+                    },
+                }
+            )
             .then((response) => {
+                console.log("axios.post then function is called");
                 console.log(response.data);
+                const imageFile = response.data;
+                console.log("server responded");
+                navigate("/calculate", { state: { imageFile: imageFile } });
             })
             .catch((error) => {
                 if (error.response) {
                     console.log(error.response);
-                    console.log("server responded");
+                    console.log("response error");
                 } else if (error.request) {
                     console.log("network error");
                 } else {

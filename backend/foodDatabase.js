@@ -36,8 +36,8 @@ first is of string type which specifies what type of collection(table/relation) 
 Second is the name of schema, the model is based on
 */
 
-const daal = new Food({
-    name: "Daal",
+const dal = new Food({
+    name: "dal",
     calorie: 90.45,
     nutritionalInformation: {
         carbohydrate: 10.18,
@@ -46,8 +46,8 @@ const daal = new Food({
     },
 });
 
-const bhaat = new Food({
-    name: "Bhaat",
+const bhat = new Food({
+    name: "bhat",
     calorie: 130,
     nutritionalInformation: {
         carbohydrate: 28.2,
@@ -56,8 +56,8 @@ const bhaat = new Food({
     },
 });
 
-const selRoti = new Food({
-    name: "Sel roti",
+const selroti = new Food({
+    name: "selroti",
     calorie: 369,
     nutritionalInformation: {
         carbohydrate: 36,
@@ -67,7 +67,7 @@ const selRoti = new Food({
 });
 
 const samosa = new Food({
-    name: "Samosa",
+    name: "samosa",
     calorie: 308,
     nutritionalInformation: {
         carbohydrate: 32,
@@ -77,7 +77,7 @@ const samosa = new Food({
 });
 
 const thukpa = new Food({
-    name: "Thukpa",
+    name: "thukpa",
     calorie: 81.9,
     nutritionalInformation: {
         carbohydrate: 15.9,
@@ -87,7 +87,7 @@ const thukpa = new Food({
 });
 
 const chowmein = new Food({
-    name: "Chowmein",
+    name: "chowmein",
     calorie: 475,
     nutritionalInformation: {
         carbohydrate: 73,
@@ -97,7 +97,7 @@ const chowmein = new Food({
 });
 
 const momo = new Food({
-    name: "Momo",
+    name: "momo",
     calorie: 198,
     nutritionalInformation: {
         carbohydrate: 20.6,
@@ -107,7 +107,7 @@ const momo = new Food({
 });
 
 const gundruk = new Food({
-    name: "Gundruk",
+    name: "gundruk",
     calorie: 321,
     nutritionalInformation: {
         carbohydrate: 38.3,
@@ -116,8 +116,8 @@ const gundruk = new Food({
     },
 });
 
-const dhindo = new Food({
-    name: "Dhindo",
+const dhido = new Food({
+    name: "dhido",
     calorie: 110,
     nutritionalInformation: {
         carbohydrate: 22.5,
@@ -126,18 +126,18 @@ const dhindo = new Food({
     },
 });
 
-const yomari = new Food({
-    name: "Yomari",
-    calorie: 225,
-    nutritionalInformation: {
-        carbohydrate: 55,
-        protein: 7.5,
-        fat: 2.5,
-    },
-});
+// const yomari = new Food({
+//     name: "yomari",
+//     calorie: 225,
+//     nutritionalInformation: {
+//         carbohydrate: 55,
+//         protein: 7.5,
+//         fat: 2.5,
+//     },
+// });
 
 const kheer = new Food({
-    name: "Kheer",
+    name: "kheer",
     calorie: 197.33,
     nutritionalInformation: {
         carbohydrate: 26.98,
@@ -146,18 +146,18 @@ const kheer = new Food({
     },
 });
 
-const kwati = new Food({
-    name: "Kwati",
-    calorie: 90,
-    nutritionalInformation: {
-        carbohydrate: 18,
-        protein: 6,
-        fat: 1.5,
-    },
-});
+// const kwati = new Food({
+//     name: "kwati",
+//     calorie: 90,
+//     nutritionalInformation: {
+//         carbohydrate: 18,
+//         protein: 6,
+//         fat: 1.5,
+//     },
+// });
 
 const chatpatey = new Food({
-    name: "Chatpatey",
+    name: "chatpatey",
     calorie: 350,
     nutritionalInformation: {
         carbohydrate: 80,
@@ -167,18 +167,16 @@ const chatpatey = new Food({
 });
 
 // Food.insertMany([
-//     daal,
-//     bhaat,
-//     selRoti,
+//     dal,
+//     bhat,
+//     selroti,
 //     samosa,
 //     thukpa,
 //     chowmein,
 //     momo,
 //     gundruk,
-//     dhindo,
-//     yomari,
+//     dhido,
 //     kheer,
-//     kwati,
 //     chatpatey,
 // ])
 //     .then(() => {
