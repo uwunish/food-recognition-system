@@ -14,19 +14,26 @@ function Calculate() {
     console.log(imageFile);
     console.log(imageFile.data);
     return (
-        <div>
-            <h2>Image</h2>
-            <img height={200} width={200} src={imageFile.data} alt="" />
+        <div className="calculate-main-div">
+            <div className="column calculate-img-div">
+                <h2>Image</h2>
+                <img height={200} width={200} src={imageFile.data} alt="" />
+            </div>
             {/* Display nutritional information and bounding boxes */}
-            <h2>Nutritional Information</h2>
-            <h4>Calorie</h4>
-            <p>some calorie value</p>
-            <h4>Carbohydrate</h4>
-            <p>some carbs</p>
-            <h4>Protein</h4>
-            <p>some protein</p>
-            <h4>Fat</h4>
-            <p>some fat</p>
+            <div className="column calculate-nutrition-div">
+                <h2>Nutritional Information</h2>
+                <label>Calorie: </label>
+                <span>some calorie value</span>
+                <br />
+                <label>Carbohydrate: </label>
+                <span>some carbs</span>
+                <br />
+                <label>Protein: </label>
+                <span>some protein</span>
+                <br />
+                <label>Fat: </label>
+                <span>some fat</span>
+            </div>
         </div>
     );
 }

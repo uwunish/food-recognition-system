@@ -57,6 +57,13 @@ function Form(props) {
 
     return (
         <div className="form">
+            <img
+                src={file}
+                alt=""
+                onLoad={handleImageLoad}
+                className={isLoaded ? "preview-img" : " "}
+                onError={(e) => (e.target.src = "")}
+            />
             <form onSubmit={handleForm}>
                 <input
                     type="file"
@@ -73,14 +80,6 @@ function Form(props) {
                     Calculate
                 </button>
             </form>
-
-            <img
-                src={file}
-                alt=""
-                onLoad={handleImageLoad}
-                className={isLoaded ? "preview-img" : " "}
-                onError={(e) => (e.target.src = "")}
-            />
         </div>
     );
 }
