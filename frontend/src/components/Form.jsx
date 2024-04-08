@@ -12,6 +12,7 @@ function Form(props) {
     const handleFileChange = (event) => {
         console.log(event.target.files[0]);
         const fileList = event.target.files;
+        console.log(fileList);
         if (fileList) {
             imageURL = URL.createObjectURL(fileList[0]);
             setFile(imageURL);
@@ -73,7 +74,7 @@ function Form(props) {
                     onChange={handleFileChange}
                     style={{ display: "none" }}
                 />
-                <label className="label" for="selected-image">
+                <label className="label" htmlFor="selected-image">
                     Select image
                 </label>
                 <button className="calculate-btn" type="submit">
